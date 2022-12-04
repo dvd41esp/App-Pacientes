@@ -1,0 +1,106 @@
+h1{
+    display: block;
+    margin: 0px auto;
+}
+
+h1 a{
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-size: 63px;
+    font-weight: 700;
+    color: #ddd;
+    text-shadow: 3px 3px 6px #333;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+
+
+h3 a{
+    width: 30px;
+    text-decoration: none;    
+    color: #ccc;
+    margin-right: 30px;
+    border-radius: 900px;
+}
+
+h1 a:hover{
+    color: white;
+}
+
+
+.offcanvas-body{
+    background-color: #131426;
+}
+
+.offcanvas-header {
+    background: #15BF81;
+}
+
+
+.offcanvas-title {
+    display: block;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+
+.nav-link{
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 700;
+    margin-right: 30px;
+    line-height: 40px;
+    padding: 20px;
+    color: #15bf81;
+}
+
+.nav-link:hover{
+    color: #F2295F;
+}
+
+.actived{
+    color:  #00ff88;
+    margin-left: 20px;
+    scale: 1.1
+}
+
+
+nav{
+    display: block;
+    background: #168C61;
+}
+
+.navbar-brand{
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#homeBtn{
+    display: block;
+    margin: 0px auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 999px;
+    transition: all 300ms;
+}
+
+#homeBtn:hover{
+    scale: 1.2;
+}
+
+
+.dropdown-menu{
+    margin-top: -10px;
+}
+
+.dropdown-item{
+    color: #666;
+    padding: 10px 30px;
+}
+
+.dropdown-item:hover{
+    color: #168C61;
+
+}

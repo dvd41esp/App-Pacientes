@@ -1,0 +1,13 @@
+<div class="container">
+    <h2> Lista de pacientes </h2>
+
+    <ul>
+        <li *ngFor="let paciente of pacientes; let indice = index"><a
+                [routerLink]="['/patient/', indice]">{{paciente.firstName}} {{paciente.lastName}}</a></li>
+    </ul>
+
+
+
+    <button class="btn btn-success" (click)="goToAddPatient()">Añadir Paciente</button>
+
+</div>

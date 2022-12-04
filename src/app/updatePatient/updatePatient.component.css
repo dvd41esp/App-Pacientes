@@ -1,0 +1,59 @@
+
+h3{
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dataBox{
+    width: 50%;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.form-control{
+    width: 90%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+#infoConsent, #lopd{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+
+}
+
+input[type='submit']{
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.buttons{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-primary{
+    background-color: #168C61;
+}
+

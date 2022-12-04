@@ -1,0 +1,40 @@
+
+#todayDate{
+    display: flex;
+    align-self: baseline;
+    font-style: italic;
+    font-size: 20px;
+    cursor: default
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: #168C61;
+    padding: 20px;
+    cursor: default
+}
+
+div ul{
+    list-style: none;
+    padding: 30px;
+}
+
+div ul li{
+    margin-bottom: 20px;
+}
+
+div ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+div ul li a:hover{
+    color: #F2295F;
+}
+

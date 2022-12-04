@@ -1,0 +1,47 @@
+<div class="container">
+
+    <h2 class="box-title"> Datos del paciente</h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <p>Nombre: <span class="patient-data">{{miPaciente.firstName}}</span></p>
+        </li>
+
+        <li class="list-group-item">
+            <p>Apellidos: <span class="patient-data">{{miPaciente.lastName}}</span></p>
+        </li>
+
+        <li *ngIf="miPaciente.age !=0" class="list-group-item">
+            <p>Edad: <span class="patient-data">{{miPaciente.age}}</span></p>
+        </li>
+
+        <li *ngIf="miPaciente.visitReason" class="list-group-item">
+            <p>Motivo Consulta: <span
+                    class="patient-data">{{miPaciente.visitReason}}</span></p>
+        </li>
+
+        <li *ngIf="miPaciente.physicHistory" class="list-group-item">
+            <p>Historial Fisio: <span
+                    class="patient-data">{{miPaciente.physicHistory}}</span></p>
+        </li>
+
+        <li *ngIf="miPaciente.medHistory" class="list-group-item">
+            <p>Historial Médico: <span
+                    class="patient-data">{{miPaciente.medHistory}}</span></p>
+        </li>
+
+        <li *ngIf="hasLOPD" class="list-group-item" >
+            <p><a href='#'>Protección de datos</a></p>
+        </li>
+
+        <li *ngIf="hasInfoCons" class="list-group-item" >
+            <p><a href='#'>Consentimiento informado</a></p>
+        </li>
+
+    </ul>
+
+    <div class="buttons">
+        <button class="btn btn-success dateBtn" (click)="goToDate()">Citar paciente</button>
+        <button class="btn btn-secondary modifyBtn" (click)="showUpdatePatient()">Modificar patiente</button>
+    </div>
+
+</div>

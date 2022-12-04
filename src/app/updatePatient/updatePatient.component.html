@@ -1,0 +1,132 @@
+<div class="container">
+  <form ngForm #formControl="ngForm">
+
+
+    <div class="dataBox">
+
+      <div class="form-floating mb-3">
+        <input type="text" name="name" class="form-control" id="floatingInput" placeholder="Nombre:*"
+          [(ngModel)]="firstNameField" #firstNameControl="ngModel" required>
+        <label for="floatingInput">Nombre: *</label>
+      </div>
+
+
+
+      <div [ngStyle]="{'color': 'red', 'margin-bottom': '30px'}"
+        *ngIf=" firstNameControl.touched && !firstNameControl.valid">
+        Introduzca el nombre del nuevo paciente
+      </div>
+
+
+      <div class="form-floating mb-3">
+        <input type="text" name="lastName" class="form-control" id="floatingInput" placeholder="Nombre:*"
+          [(ngModel)]="lastNameField" #lastNameControl="ngModel" required>
+        <label for="floatingInput">Apellidos: *</label>
+      </div>
+
+      <!--
+  <label for="lastName" class="form-label">Apellidos:*</label>
+
+  <input type="text" name="lastName" class="form-control" [(ngModel)]="lastNameField" #lastNameControl="ngModel"
+      required>
+-->
+
+      <div [ngStyle]="{'color': 'red', 'margin-bottom': '30px'}"
+        *ngIf=" lastNameControl.touched && !lastNameControl.valid">
+        Introduzca los apellidos del nuevo paciente
+      </div>
+
+
+      <div class="form-floating mb-3">
+        <input type="number" name="age" class="form-control" id="floatingInput" placeholder="Edad:"
+          [(ngModel)]="ageField">
+        <label for="floatingInput">Edad:</label>
+      </div>
+
+      <!--
+  <label for="age" class="form-label">Edad:</label><br>
+  <input type="number" name="age" class="form-control" [(ngModel)]="ageField">
+-->
+
+      <div [ngStyle]="{'height': '150px'}" class="form-floating mb-3">
+        <textarea type="text" name="visitReason" class="form-control" id="floatingInput"
+          placeholder="Motivo de consulta" [ngStyle]="{'height': '100%'}" [(ngModel)]="visitReasonField"></textarea>
+        <label for="floatingInput">Motivo de consulta:</label>
+      </div>
+    </div>
+    <!--
+  <label for="visitReason" class="form-label">Motivo de consulta:</label><br>
+  <textarea type="text" name="visitReason" class="form-control" [(ngModel)]="visitReasonField">
+-->
+    <div class="dataBox">
+
+      <div [ngStyle]="{'height': '150px'}" class="form-floating mb-3">
+        <textarea type="number" name="physicHistory" class="form-control" id="floatingInput"
+          placeholder="Historial de Fisioterapia:" [ngStyle]="{'height': '100%'}"
+          [(ngModel)]="physicHistoryField"></textarea>
+        <label for="floatingInput">Historial de Fisioterapia:</label>
+      </div>
+
+      <!--
+
+  <label for="physicHistory" class="form-label">Historial de Fisioterapia:</label><br>
+  <textarea type="text" name="physicHistory" class="form-control" [(ngModel)]="physicHistoryField"> </textarea>
+
+  -->
+
+
+      <div [ngStyle]="{'height': '150px'}" class="form-floating mb-3">
+        <textarea type="number" name="medHistoryField" class="form-control" id="floatingInput"
+          placeholder="Historial Médico:" [ngStyle]="{'height': '100%'}" [(ngModel)]="medHistoryField"></textarea>
+        <label for="floatingInput">Historial Médico:</label>
+      </div>
+
+      <!--
+  <label for="medHistory" class="form-label">Historial Médico:</label><br>
+  <textarea type="text" name="medHistory" class="form-control" [(ngModel)]="medHistoryField"> </textarea>
+-->
+
+      <label for="dataProtectDoc" class="form-label">LOPD:</label><br>
+      <input type="checkbox" id="lopd" name="dataProtectDoc" class="form-check-input" [(ngModel)]="dataProtectDocField">
+
+      <label for="infoConsent" class="form-label">Consentimiento informado</label><br>
+      <input type="checkbox" id="infoConsent" name="infoConsent" class="form-check-input"
+        [(ngModel)]="infoConstentField">
+    </div>
+    *Obligatorio
+
+
+
+
+    <!--
+      <label class="form-label" for="name">Nombre:</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="firstNameField">
+  
+      <label class="form-label" for="lastName">Apellidos:</label>
+      <input type="text" class="form-control" name="lastName" [(ngModel)]="lastNameField">
+  
+      <label class="form-label" for="age">Edad:</label>
+      <input type="number" class="form-control" name="age" [(ngModel)]="ageField">
+  
+      <label class="form-label" for="visitReason">Motivo de consulta:</label>
+      <input type="text" class="form-control" name="visitReason" [(ngModel)]="visitReasonField">
+  
+      <label class="form-label" for="physicHistory">Historial de Fisioterapia:</label>
+      <input type="text" class="form-control" name="physicHistory" [(ngModel)]="physicHistoryField">
+  
+      <label class="form-label" for="medHistory">Historial Médico:</label>
+      <input type="text" class="form-control" name="medHistory" [(ngModel)]="medHistoryField">
+  
+      <label class="form-check-label" for="dataProtectDoc">LOPD:</label>
+      <input type="checkbox" class="form-check-input" name="dataProtectDoc" [(ngModel)]="dataProtectDocField">
+  
+      <label class="form-check-label" for="infoConsent">Consentimiento informado:</label>
+      <input type="checkbox" class="form-check-input" name="infoConsent" [(ngModel)]="infoConstentField">
+  -->
+
+  </form>
+  <div class="buttons">
+    <input class="btn btn-primary" type="button" value="Actualizar Paciente" (click)="modifyPatient()">
+    <button class="btn btn-danger" (click)="deletePatient()">Eliminar Paciente</button>
+  </div>
+</div>

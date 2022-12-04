@@ -1,0 +1,35 @@
+h2{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #168C61;
+    padding: 20px;
+    cursor: default;
+}
+
+div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 30px;
+}
+
+div ul li{
+    margin-bottom: 20px;
+}
+
+div ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+div ul li a:hover{
+    color: #F2295F;
+}

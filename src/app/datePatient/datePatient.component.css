@@ -1,0 +1,147 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0px auto;
+}
+
+.list-group-item{
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.list-group-item:hover{
+    background-color: #ddd;
+}
+
+
+.box-title{
+    text-align: center;
+    line-height: 91px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    margin-bottom: 0px;
+}
+
+p, .list-group-item p{
+    font-size: 30px;
+    display: block;
+    font-weight: 700;
+    margin-top: 21px;
+
+}
+
+.list-group-item p a{
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+}
+
+#dateTarget{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 20%;
+}
+
+
+.patient-name{
+    font-style: italic;
+    color: #168c61;
+}
+
+.patient-dates{
+    text-align: center;
+}
+
+.patient-header{
+    width: 41%;
+    margin-right: 0px;
+}
+
+#dates{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.dates{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    max-height: 330px;
+    overflow-y: scroll;
+}
+
+.dates .list-group-item:hover{
+    background: transparent;
+}
+
+.collapseDiv{
+    border: none;
+}
+
+.card-body {
+    padding: 0px;
+    border: none;
+}
+
+.date{
+    margin-right: 10px;
+}
+
+.buttons{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/*
+CALENDAR STYLE
+*/
+
+.calendar{
+    width: 80%;
+    padding: 30px;
+}
+
+@media (max-width: 990px) {
+    .calendar{
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: row;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #dateTarget{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 20%;
+    }
+
+
+    .patient-header{
+        margin: 0px auto;
+    }
+}

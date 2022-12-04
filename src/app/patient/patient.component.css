@@ -1,0 +1,34 @@
+.container h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #168C61;
+    padding: 20px;
+    cursor: default;
+}
+
+.list-group-item:hover{
+    background-color: #ccc;
+}
+
+.list-group-item p{
+    font-size: 20px;
+    display: block;
+    font-weight: 700;
+    margin-top: 21px;
+    line-height: 23px;
+    cursor: default;
+}
+
+.patient-data{
+    font-style: italic;
+}
+
+button{
+
+    width: 150px;
+    height: 50px;
+    
+    margin-bottom: 20px;
+}
+

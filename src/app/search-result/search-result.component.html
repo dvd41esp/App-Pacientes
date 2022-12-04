@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div id="searchFailure" *ngIf="searchResult.length == 0">
+        <p>Introduzca nombre y/o apellidos del paciente</p>
+    </div>
+
+    <div id="searchSuccess" *ngIf="searchResult.length > 0">
+
+        <h3>Resultado de su búsqueda:</h3>
+
+        <ul>
+
+            <li class="result" *ngFor="let patients of searchResult">
+
+                <a [routerLink]="['/patient/' + patients[2]]">{{patients[0]}} {{patients[1]}}</a>
+
+            </li>
+
+        </ul>
+
+
+    </div>
+
+    <form ngForm #searchForm="ngForm">
+
+        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" #searchInput [(ngModel)]="searchField">
+
+        <input type="submit" class="btn btn-success" value="Buscar" (keyup.enter)="search(searchInput)"
+            (click)="search(searchInput)" [disabled]="!searchForm.valid">
+
+    </form>
+</div>

@@ -1,0 +1,49 @@
+
+h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: #168C61;
+    padding: 12px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dataBox{
+    width: 50%;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.form-control{
+    width: 90%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+#infoConsent, #lopd{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+
+}
+
+input[type='submit']{
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 15px;
+}

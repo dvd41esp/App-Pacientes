@@ -1,0 +1,15 @@
+
+<div class="container">
+
+  <span id="todayDate">{{title.toLocaleDateString()}}</span>
+  <h2 *ngIf="dayPatients.length > 0" class="box-title" >Pacientes de hoy</h2>
+  <h2 *ngIf="dayPatients.length == 0" class="box-title">Sin pacientes</h2>
+
+  <ul>
+    <li *ngFor="let paciente of dayPatients; let indice = index"><a
+        (click)="goToPatient($event)">{{paciente}}  </a></li>
+  </ul>
+
+</div>
+
+

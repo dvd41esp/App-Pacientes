@@ -1,0 +1,39 @@
+
+#searchSuccess{
+    border-bottom: 1px solid #F2295F;
+}
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+
+}
+
+.result a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.result a:hover{
+    color: #F2295F;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 20%;
+    margin-top: 30px;
+
+}
+
+form input{
+    margin-bottom: 15px;
+}
