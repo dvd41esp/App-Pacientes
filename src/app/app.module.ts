@@ -16,6 +16,7 @@ import { DatePatientComponent } from './datePatient/datePatient.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { LoginComponent } from './login/login.component';
+import { CookieService } from 'ngx-cookie-service';
 
 import { DataService } from './services/data.service';
 import { PatientService } from './services/patient.service';
@@ -72,7 +73,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     FullCalendarModule
   ],
-  providers: [PatientService, DataService, LoginService, LoginGuardian],
+  providers: [PatientService, DataService, LoginService, LoginGuardian, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
